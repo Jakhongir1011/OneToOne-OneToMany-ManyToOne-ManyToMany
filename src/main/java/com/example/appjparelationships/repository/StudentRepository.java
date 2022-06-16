@@ -12,4 +12,6 @@ public interface StudentRepository extends JpaRepository<Student,Integer> {
     Page<Student> findStudentsByGroup_FacultyId(Integer group_faculty_id, Pageable pageable);
 
     Student findStudentsByGroupId(Integer group_id);
+
+    String deleteAllByGroup_Faculty_University(Integer group_faculty_university);
 }

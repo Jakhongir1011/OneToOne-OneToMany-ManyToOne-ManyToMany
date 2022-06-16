@@ -43,6 +43,7 @@ public class SubjectController {
          }
         return new Subject();
     }
+
     // DELETE SUBJECT BY ID
     @RequestMapping(value = "/subject/{id}",method = RequestMethod.DELETE)
     public String deleteSubjectById(@PathVariable Integer id){

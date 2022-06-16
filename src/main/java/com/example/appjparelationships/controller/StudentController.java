@@ -102,4 +102,12 @@ public class StudentController {
        }
 
     }
+
+    // VAZIRLIK UCHUN
+    @DeleteMapping("/forUniversity{universityId}")
+    public String deleteByUniversityId(@PathVariable Integer universityId){
+       studentRepository.deleteAllByGroup_Faculty_University(universityId);
+        return "it's delete student of University";
+    }
+
 }
